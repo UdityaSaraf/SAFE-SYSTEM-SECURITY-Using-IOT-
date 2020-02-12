@@ -27,15 +27,16 @@ Serial.print("LDR VALUE IS: ");
 Serial.println(input_val);
 if(input_val>=13)
 {
-  for(int i=0;i<=10;i++){
- digitalWrite(red,0);
+  for(int i=0;i<=10;i++)
+  {
+  digitalWrite(red,0);
   digitalWrite(blue,255);
- digitalWrite(green,255);
- delay(10);
- digitalWrite(BUZZER,HIGH);
- delay(150);
- digitalWrite(BUZZER,LOW);
- delay(100);
+  digitalWrite(green,255);
+  delay(10);
+  digitalWrite(BUZZER,HIGH);
+  delay(150);
+  digitalWrite(BUZZER,LOW);
+  delay(100);
  
   MyLCD.begin(16,2);
   MyLCD.clear();
@@ -58,7 +59,7 @@ else
 {
   digitalWrite(red,255);
   digitalWrite(blue,0);
- digitalWrite(green,255);
+  digitalWrite(green,255);
   digitalWrite(red,LOW);
   digitalWrite(BUZZER,LOW);
   MyLCD.begin(16,2);
